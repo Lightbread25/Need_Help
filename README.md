@@ -1,0 +1,1 @@
+Hello, Numerical calculation equations are in the Help.pdf file, halo_mass_function.py has contains all the equations that are called in the Test_Zone.py. I couldn't upload the data as there is a limit to file size upload
