@@ -65,7 +65,7 @@ redshift = redshift[M200m >= 1e14]
 test = np.linspace(0.2,3)
 # f = (1/N(0.2,0.4,1e14,sky_coverage=10313,Method="Bocquet")) * dN_dz(test,1e14,sky_coverage=10313,Method="Bocquet")
 # plt.plot(test,dN_dz(test,1e14,sky_perc=sky_perc,Method='Bocquet'),'r',label="theory")
-plt.plot(test,dN_dz(test,1e14,sky_perc=sky_perc,Method='Bocquet')/44,'b',label = 'Theory/40')
+plt.plot(test,dN_dz(test,1e14,sky_perc=sky_perc,Method='Bocquet')/40,'b',label = 'Theory/40')
 plt.hist(redshift,bins=50,label = "DATA")
 # plt.yscale('log')
 # print(len(redshift_masked),N(min(redshift_masked),max(redshift_masked),1e14,sky_perc=sky_perc,Method="Bocquet"))
