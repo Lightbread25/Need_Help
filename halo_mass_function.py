@@ -221,7 +221,7 @@ def dN_dz(redshift,Min_Mass,sky_perc = 0.4,Method = "Tinker"):
         Unbiased_M, _ = Bocquet_2016(M,redshift,dn_dlnm=True)
     Int = np.dot(Unbiased_M,dlnM)
     chi = results.comoving_radial_distance(redshift) *h
-    Hz = results.h_of_z(redshift) * h
+    Hz = results.h_of_z(redshift) / h
     CVE =  (chi**2)/Hz
     Omega_Sky = sky_coverage * np.power(np.pi/180,2)
     f = Omega_Sky * CVE * Int 
